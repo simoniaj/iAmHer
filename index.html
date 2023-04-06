@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>iAmHer</title>
+  <link id="icon" rel="icon" href="iAmHer.png">
+  <!--this part controls the web page name and icon-->
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="darkmodeswitch.css" rel="stylesheet" type="text/css"/>
+  <link href="articles.css" rel="stylesheet" type="text/css"/>
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link href="readmoreless.css" rel="stylesheet" type="text/css"/>
+  <!--  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>-->
+</head>
+
+<body>
+  <header>
+      <!-- New Logo: -->
+      <img src="iAmHer.png" alt="iAmHer Logo" class="logo" />
+      <!-- OLD LOGO: <h1 id = "iamherfont">iAmHer</h1> -->
+
+      <!-- Header Buttons "Button1"-->
+      <a href="#main">
+        <button class="buttonstyle" id="b1">Media</button>
+      </a>
+      
+      <!-- Search bar; It's in a div to "connect" the search button to the bar -->
+      <div id="searchbar">
+        <input id="searchquery" type="text" name="Search" placeholder = "Search With Me!"/>
+        <button id="submitsearch" type="submit" name="Submit" class="buttonstyle">Search</button>
+      </div>
+      
+      <!-- Dark mode switch -->
+      <label class="switch">
+        <input id="darkmodeswitch" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      
+  </header>
+
+  <!--element is most often displayed as a horizontal rule
+       that is used to separate content (or define a change) in an HTML page. [REMOVED HR TAGS]-->
+      <p id="quote"><em><strong>"There is no limit to what we as women can accomplish"
+            ~Michelle O.</strong></em></p>
+
+  <img id="image" src="womenbanneredited.png" alt="Banner for women empowerment. Image displaying women versatility">
+
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <img src="thankyou.gif">
+      <p><strong>Thanks for your support <span id = "modalMessage"></span>!</strong><br><br> 
+      Your signature is an important contribution to the cause, and I am deeply grateful for your involvement.
+
+        Your willingness to take action and stand up for what you believe in is inspiring, and it gives me hope that we can make a difference in the world.
+        
+        Thank you again for your support.</p>
+      <span class="close">&times;</span>
+    </div>
+  </div>
+
+  <div id=overview>
+
+  <h3>Overview:</h3> <hr>
+  <p>Women have been the subject of scrutiny in many aspects of life, whether it be education,
+      professional environments, and society as a whole. My topic, 'Women; Gender inequalities,'
+      cannot address just one social injustice as this topic has avenues that spill into each other.
+      iAmHer will be a pillar to bring these situations to light.</p>
+
+      <hr>
+      <p>iAmHer is a website that is dedicated to educating viewers on the struggles faced by women all over the world. It is an online platform that aims to empower women by providing them with resources, information, and a safe space to discuss issues that affect them. The website covers various topics related to women's rights, including gender equality, reproductive rights, workplace discrimination, and domestic violence. iAmHer also provides a platform for women to share their stories and experiences, allowing them to connect with others who may be going through similar situations. The website is a powerful tool for women to come together and demand equal rights and opportunities. It serves as a valuable resource for women who want to stay informed and engaged in the fight for gender equality.</p>
+
+  </div>
+  <br id = "main">
+  <!-- <div class = "articleslide1"> -->
+  <main class="reveal">
+    <h1>Articles</h1>
+    <hr>
+
+    <article class="articleStyle1">
+      <img src="dv.png" alt="domestic violence">
+      <section class="articleInfo">
+        <h6>Domestic Violence</h6>
+        <p class="articlePreview">Domestic violence is a pattern of behavior that involves the use of physical, emotional, or sexual abuse by one partner against another in an intimate relationship. It can take many forms</p>
+          <p class="readmore">Read More...</p>
+      <div class="articleFullview">
+      <p>Domestic violence is a pattern of behavior that involves the use of physical, emotional, or sexual abuse by one partner against another in an intimate relationship. It can take many forms, including physical harm, psychological anguish, and social isolation are just a few of the negative and protracted consequences that domestic violence can have on its victim.</p> 
+          <br>
+        The following are linked reports to the different classes of Domestic Violence and what they involve:
+        <ul id = "resourcesLinks">
+          <a href="https://assets.speakcdn.com/assets/2497/domestic_violence_and_physical_abuse_ncadv.pdf" target="_blank"><li class = "externalResource">Facts about Domestic Violence and Physical Abuse</li></a>
+          <a href="https://assets.speakcdn.com/assets/2497/sexual_assault_dv.pdf" target="_blank"><li class = "externalResource">Domestic Violence & Sexual Assault</li></a>
+          <a href="https://assets.speakcdn.com/assets/2497/emotional_or_psychological_abuse.pdf" target="_blank"><li class = "externalResource">Emotional and Psychological Abuse</li></a>
+          <a href="https://assets.speakcdn.com/assets/2497/ncadv_fact_sheet_intimate_partner_stalking.pdf" target="_blank"><li class = "externalResource">Stalking</li></a>
+      </div>
+        <p class="readless">Read Less</p>
+      </section>
+    </article>
+
+    <article class="articleStyle2">
+      <img src="inequalityinwork.png" alt="inequality in work">
+      <section class="articleInfo">
+        <h6>Gender Inequality</h6>
+        <p class="articlePreview">Gender inequality is a pervasive issue that affects people around the world. It refers to the unequal treatment of individuals based on their gender, often resulting in women being disadvantaged in... </p>
+          <p class="readmore">Read More...</p>
+        <div class="articleFullview">
+          <p>Gender inequality is a pervasive issue that affects people around the world. It refers to the unequal treatment of individuals based on their gender, often resulting in women being disadvantaged in various areas of life. In this article, we will explore the causes, effects, and potential solutions to gender inequality. </p>   
+        <br>
+        Causes of Gender Inequality:
+        <ul>
+            <li class = "externalResource"><strong><em>Gender Stereotyping:</em></strong> Societal expectations about gender roles often lead to stereotyping and discrimination against women, limiting their opportunities and potential.</li>
+              <br>
+            <li class = "externalResource"><strong><em>Unequal Access to Education:</em></strong> In many parts of the world, girls are not given the same access to education as boys, limiting their opportunities for economic and social mobility.</li>
+              <br>
+            <li class = "externalResource"><strong><em>Wage Gap:</em></strong> Women are often paid less than men for the same work, contributing to economic inequality and making it more difficult for women to achieve financial independence.</li>
+              <br>
+            <li class = "externalResource"><strong><em>Discrimination in the Workplace:</em></strong> Women may face discrimination in hiring, promotion, and other aspects of employment, limiting their opportunities for career advancement and economic security.</li>
+              <br>
+            <li class = "externalResource"><strong><em>Gender Stereotyping:</em></strong> Societal expectations about gender roles often lead to stereotyping and discrimination against women, limiting their opportunities and potential.</li>
+        </ul>
+        Effects of Gender Inequality:
+        <ul>
+              <li class = "externalResource"><strong><em>Economic Disadvantage:</em></strong> Women may be more likely to live in poverty due to lower wages, limited access to education, and discrimination in the workplace.</li>
+                <br>
+              <li class = "externalResource"><strong><em>Higher Rates of Violence:</em></strong> Women are more likely to experience violence, including domestic violence and sexual assault, due to gender inequality and societal attitudes towards women.</li>
+                <br>
+              <li class = "externalResource"><strong><em>Limited Political Representation:</em></strong> Women are often underrepresented in political leadership, limiting their ability to advocate for their needs and interests.</li>
+        </ul>
+        Solutions to Gender Inequality:
+        <ul>
+              <li class = "externalResource"><strong><em>Equal Pay Laws:</em></strong> Policies can be implemented to ensure that women are paid the same as men for the same work.</li>
+                <br>
+              <li class = "externalResource"><strong><em>Education:</em></strong> Providing equal access to education for girls and women can help to break down gender barriers and promote gender equality.</li>
+               <br>
+              <li class = "externalResource"><strong><em>Empowerment:</em></strong> Providing women with opportunities for leadership, economic security, and political representation can help to empower them and promote gender equality.</li>
+        </ul>
+        </div>
+        <p class="readless">Read Less</p>
+      </section>
+    </article>
+
+    <article class="articleStyle1">
+      <img src="ht.png" alt="human trafficking">
+      <section class="articleInfo">
+        <h6>Human Trafficking</h6>
+        <p class="articlePreview">Human trafficking is a despicable crime that involves using people as slaves or for prostitution. Victims are frequently coerced, deceived, or physically assaulted into this predicament. Millions of people</p>
+          <p class="readmore">Read More...</p>
+        <div class="articleFullview">
+        <p>Human trafficking is a despicable crime that involves using people as slaves or for prostitution. Victims are frequently coerced, deceived, or physically assaulted into this predicament. Millions of people are impacted by this global issue, and in order to effectively battle it, it is imperative that we comprehend the extent and characteristics of this crime. Sex trafficking, forced labor, and debt servitude are just a few of the various manifestations of human trafficking. It is frequently fueled by inequality, political unrest, and poverty. To increase awareness, identify and help victims, and hold offenders accountable, governments, law enforcement organizations, and individuals must collaborate.</p>
+          <br>
+        <p>The following cases highlight the complexity and seriousness of the issue of human trafficking, as well as the need for greater awareness, prevention, and support for victims:</p>  
+        <ul id = "resourcesLinks">
+            <a href="https://www.justice.gov/usao-sdny/press-release/file/1180481/download" target="_blank"><li class = "externalResource">The Jeffery Epstein Case</li></a>
+            <a href="https://www.npr.org/2020/11/24/938039004/a-yazidi-woman-searches-for-her-lost-daughter-kidnapped-by-isis-6-years-ago" target="_blank"><li class = "externalResource">The Yazidi Women Kidnapping</li></a>
+            <a href="https://ejfoundation.org/resources/downloads/shrimp_report_v44_lower_resolution.pdf" target="_blank"><li class = "externalResource">The Thai Shrimp Industry</li></a>
+        </ul>
+        </div>
+        <p class="readless">Read Less</p>
+      </section>
+    </article>
+
+    <article class="articleStyle2">
+      <img src="rape.png" alt="rape">
+      <section class="articleInfo">
+        <h6>Rape</h6>
+        <p class="articlePreview">Rape culture refers to a society in which sexual violence is normalized and excused, often through victim blaming and minimizing the harm caused to survivors. It is essential to understand the impact of rape...</p>
+          <p class="readmore">Read More...</p>
+      <div class="articleFullview">
+        <p>Rape culture refers to a society in which sexual violence is normalized and excused, often through victim blaming and minimizing the harm caused to survivors. It is essential to understand the impact of rape culture on individuals and communities and work to challenge these harmful beliefs and behaviors. This can be achieved through education, advocacy, and support for survivors.</p>
+        The following cases highlight the seriousness and complexity of the issue of rape and sexual assault, as well as the need for greater awareness, prevention, and support for survivors:  
+        <ul id = "resourcesLinks">
+          <a href="https://da.lacounty.gov/media/news/harvey-weinstein-indicted-sexually-assaulting-5-women" target="_blank"><li class = "externalResource">The Harvey Weinstein Case</li></a>
+          <a href="https://www.bbc.com/news/world-63817388" target="_blank"><li class = "externalResource">The Delhi Gang Rape Case</li></a>
+          <a href="https://edition.cnn.com/2013/03/17/justice/ohio-steubenville-case/index.html" target="_blank"><li class = "externalResource">The Steubenville Rape Case</li></a>
+      </ul>
+      </div>
+        <p class="readless">Read Less</p>
+      </section>
+    </article>
+
+<h1 class="reveal">Videos</h1>
+<hr class="reveal">
+<div id = "mainVideodiv" class="reveal slideshow">
+  <!-- Video must have an id of mainVideo. If there are multiple, change mainVideo to a class and rename it -->
+  <iframe class="mainVideo mySlides" width="560" height="315" src="https://www.youtube.com/embed/Sq03d_5LtVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="mainVideo mySlides" width="560" height="315" src="https://www.youtube.com/embed/0WRNwDptQe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="mainVideo mySlides" width="560" height="315" src="https://www.youtube.com/embed/ok_UO_vLN3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="mainVideo mySlides" width="560" height="315" src="https://www.youtube.com/embed/42sckNaHQA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="mainVideo mySlides" width="560" height="315" src="https://www.youtube.com/embed/-gg6JhlrdxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="mainVideo mySlides" width="560" height="315" src="https://www.youtube.com/embed/wIqVJlukBZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="mainVideo mySlides" width="560" height="315" src="https://www.youtube.com/embed/JpsxAjuye7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="mainVideo mySlides" width="560" height="315" src="https://www.youtube.com/embed/SoOU9kHd8Tg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  <!-- Next and previous arrows -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--Note: Change onclick to Eventlistener -->
+  <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+  
+  <!-- Bottom Dots, note that for every video you add, you should add a dot as such: -->
+  <center>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+  
+  </center>
+  
+  </div>
+</main>
+
+
+<form id="petition" class="reveal">
+
+  <h3>Petition</h3>
+  <hr>
+  <p>We demand that steps be done to advance women's equality on the basis of gender. Systemic obstacles, such as gender-based violence, discrimination, and unequal pay, continue to limit women's prospects and potential.
+
+
+    We kindly ask you to:</p>
+    
+    <ul><li>Enact laws and regulations that support gender equality, such as increasing the proportion of women in senior roles and ensuring equal pay for equal labor.</li><br>
+    
+    <li>Provide women the knowledge and tools they need to access the opportunities and services they need to succeed, such as healthcare, education, and economic empowerment.</li><br>
+    
+    <li>Funding for groups that promote women's rights and offer crucial assistance to women who have endured prejudice and violence based on their gender should be increased.</ul><br>
+    
+    <p>For all women, we want justice and equality. Act today to address the structural problems that support discrimination and gender inequality.</p>
+  
+    <br>
+    <!-- Inline-flex class aligns label and input box horizontally as opposed to being on top of each other -->
+    <div class="inline-flex">
+      <label>Name</label>
+      <input type="text" id="formName">
+    </div>
+  
+    <div class="inline-flex">
+      <label>Hometown</label>
+      <input type="text" id="formTown">
+    </div>
+  
+    <div class="inline-flex">
+      <label>Email</label>
+      <input type="email" id="formEmail">
+    </div>
+ 
+
+  <input type="submit" value="Sign!" id="submit">
+  <ul id="signatures">
+  </ul>
+  <p id="sigCount"></p>
+  <p id="Error"></p>
+</form>
+
+<div id = "resources" class="reveal">
+  <h3>Resources</h3>
+  <hr>
+  <p>We would like to invite you to explore the resources listed on our website. These resources are carefully curated and designed to provide you with valuable information and insights. We hope that you find them helpful and informative.
+    <br> <br>
+    Stay educated
+  </p>
+  <ul id="resourcesLinks">
+    <a href="#"><li class="externalResource"><a href = "https://www.who.int/news-room/fact-sheets/detail/violence-against-women" target = "_blank">
+      Violence against women</a></li></a>
+    <a href="#"><li class="externalResource"><a href = "https://www.ilo.org/washington/areas/gender-equality-in-the-workplace/WCMS_159496/lang--en/index.htm" target = "_blank">
+      Women in the US Labor Force</li></a>
+    <a href="#"><li class="externalResource"><a href = https://www.frontiersin.org/articles/10.3389/fpsyg.2018.01330/full" target = "_blank">
+      Gender Inequality</a></li></a>
+    <a href="#"><li class="externalResource"><a href = "https://www.mckinsey.com/featured-insights/diversity-and-inclusion/women-in-the-workplace" target = "_blank">
+      Women in the Workplace 2022</li></a>
+  </ul>
+  </div>
+
+
+<!-- Floating Share Button -->
+<div class = "sharebutton" onclick="sharebutton();">
+  <span>+</span>
+ <ul>
+    <a href = "https://www.facebook.com" target = "_blank"><li><img src="fb.png" alt="facebook logo">Share on Facebook</li></a>
+    <a href = "https://www.instagram.com" target = "_blank"><li><img src="insta.png" alt="intagram logo">Share on Instagram</li></a>
+    <a href = "https://www.twitter.com" target = "_blank"><li><img src="twitter.png" alt="twitter logo">Share on Twitter</li></a>
+    <a href = "https://web.whatsapp.com" target = "_blank"><li><img src="whtsa.png" alt="whatsapp logo">Share on WhatsApp</li></a>
+    <a href = "https://www.linkedin.com" target = "_blank"><li><img src="linkedin.png" alt="linkedin logo">Share on LinkedIn</li></a>
+    <a href = "https://www.tumblr.com" target = "_blank"><li><img src="tumblr.png" alt="tumblr logo">Share on Tumblr</li></a>
+    <a href="#"><li><input type="checkbox" id="motionreduce">Reduce Motion</li></a>
+ </ul> 
+</div>
+<hr>
+
+<!-- Hidden audio secrets ;D -->
+<audio src="magic-sfx.wav" id="pageloadSFX"></audio>
+<audio src="spell-tinkle-trimmed.flac" id="lightmodeSFX"></audio>
+<audio src="magic-smite-trimmed.wav" id="darkmodeSFX"></audio>
+
+  <!--this is the footer where you put your socials-->
+  <!--or just put simple copyright text-->
+  
+    <footer>
+      <div class = "prayerfooterdiv">
+        <img class= "prayerfooterdiv img" src="prayingwoman.png" alt="cartoon woman praying">
+      <form id="prayerRequests">
+
+        <h3>Prayer Requests</h3>
+        <br>
+        <p>Whatever you are going through, know that you are not alone. Remember, you are loved and cared for, and we are here for you.</p>
+        <p></p><br>
+          <!-- Inline-flex class aligns label and input box horizontally as opposed to being on top of each other -->
+          <div class="inline-flex">
+            <label>Name:</label>
+            <input type="text" id="formName">
+          </div>
+        
+          <div class="inline-flex">
+            <label>Email:</label>
+            <input type="text" id="formEmail">
+          </div>
+        
+          <div class="inline-flex">
+            <label>Request:</label>
+            <textarea name="Your Prayer Request" id="prayerRequests textarea" cols="50" rows="5"></textarea>
+          </div>
+       
+      
+        <input type="submit" value="Pray" id="submitprayer">
+      
+          <p id="requestprayer">Thank you for requesting a prayer.</p>
+      </form>
+    </div>
+      <div id = "footerdiv">
+      <center><p>Copyright ©2023 Simonia's Website</p></center>
+      </div>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+<script src ="readmoreless.js"> </script>
+
+</html>

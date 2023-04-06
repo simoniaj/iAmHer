@@ -1,0 +1,24 @@
+.articlePreview{
+    padding: 12px;
+
+}
+.articleFullview{
+    display: none;
+    padding: 12px;
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: normal;
+}
+
+.readmore{
+    font-size: 28px;
+    
+}
+
+.readless{
+    display: none;
+}
+
+.requestprayer{
+    display: none;
+}

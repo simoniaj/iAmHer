@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+   padding: 0px;
+   margin: 0px;
+   border: 0px;
+
+   color: #3A4F7A;
+   font-family: Dancing Script;
+   font-size: 20px;
+
+   background-image: url("wpo4.png");
+   background-size: contain;
+   background-repeat:no-repeat;
+   background-color:#edb3b2;
+}
+
+hr{
+  border: 2px solid gray;
+  width: 70%;
+}
+
+h1{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+a, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+      a:hover{
+        color: #510bd4;
+        transition: 0.5s;
+      }
+
+header{
+  /* Display as a CSS grid */
+  display: grid;
+
+  /* Setup the grid: 4 columns, 1 row */
+  grid-template-columns: 13fr 2fr 3fr 2fr; /*fr units are fractional, like a ratio of 6:2:2:3*/
+  grid-template-rows: 1fr;
+
+  margin: 20px 0px 20px 0px;
+
+}
+    .logo{
+      grid-row:1;
+      grid-column: 1;
+      width: 100px;
+      height: 100px;
+      margin-left: 20px;
+      animation: movedown 2s linear 1;
+      visibility: hidden;
+      animation-fill-mode: forwards;
+    }
+/* animation analytics for the logo, search bar and buttons flexbox */
+        @keyframes movedown {
+          0%{
+            transform: translateY(-100px);
+            visibility:visible;
+          }
+          100%{
+            transform: translateY(0);
+            visibility:visible;
+          }
+
+        }
+/* b1 are for my buttons */
+    #b1{
+      grid-row:1;
+      grid-column:3;
+      width: 100px;
+      animation: movedown 2.25s linear 1;
+      animation-fill-mode: forwards;
+    }
+    #searchbar{
+      grid-row:1;
+      grid-column:3;
+      display: flex; /* A flexbox inside the grid 🎃*/
+      flex-direction: row;
+      justify-content:center; /*Attach button to searchbar*/
+      height: 40px;
+      animation: movedown 2.75s linear 1;
+      animation-fill-mode: forwards;
+    }
+    .switch{
+      grid-row:1;
+      grid-column: 4;
+      width: 100px;
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: movedown 2.5s linear 1;
+      animation-fill-mode: forwards;
+    }
+        #searchbar input{
+          font-size: 18px;
+          font-family: Averia Sans Libre;
+          border: 3px solid gray;
+          border-radius: 5px;
+        }
+            #searchbar input:focus{
+              background-color: #CDE990;
+              transition: 0.66s;
+            }
+        #searchbar button{
+          padding: 8px;
+        }
+
+
+.modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        .modal-content {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          gap: 12px; 
+
+          font-family: Open Sans;
+          text-align: justify;
+          background-color: #fefefe;
+          margin: 15% auto; /* 15% from the top and centered */
+          padding: 20px;
+          border: 1px solid #888;
+          width: 50%; /* Could be more or less, depending on screen size */
+          border-radius: 35px;
+
+          animation: fade 5s linear;
+          animation-fill-mode: forwards;
+        }
+        @keyframes fade {
+          0%{
+            opacity: 0;
+          }
+          10%{
+            opacity: 0.5;
+          }
+          20%{
+            opacity: 1;
+          }
+          89%{
+            opacity: 1;
+          }
+          90%{
+            opacity: 0.5;
+          }
+          100%{
+            opacity: 0;
+          }
+        }
+        .modal-content img{
+          height: 255px;
+          width: 290px;
+
+          border-radius: 35px;
+          animation: boing 5s linear;
+          animation-fill-mode: forwards;
+        }
+        @keyframes boing{
+          0% {
+            transform: translateX(0);
+          }
+          20% {
+            transform: translateX(-20px);
+          }
+          40% {
+            transform: translateX(0);
+          }
+          60%{
+            transform: translateX(16px)
+          }
+          80%{
+            transform: translateX(0);
+          }
+          100%{
+            transform: translateX(-10px);
+          }
+        }
+        
+        /* Close button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close:hover, .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+#quote{
+    font-size: 28px;
+    /* text-shadow: 1px 1px blue; */
+    /* font-weight: bold; */
+    background-color: #CDE990;
+    opacity: 0.7;
+    color: #020066;
+
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    animation: moveleft 2s linear 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+/* animation for the quote */
+      @keyframes moveleft {
+        0%{
+          transform: translateX(-100%);
+          visibility:visible;
+        }
+        100%{
+          transform: translateX(0);
+          visibility:visible;
+        }
+      }
+
+#image{
+  height: 250px;
+  width: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  animation: moveleft 2s linear 1;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+/* animation for the top banner */
+    @keyframes moveleft {
+      0%{
+        transform: translateX(-100%);
+        visibility:visible;
+      }
+      100%{
+        transform: translateX(0);
+        visibility:visible;
+      }
+    }
+
+
+#overview{
+  margin: auto; /* Center div*/
+  margin-top: 2%; /*Top space*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: zoomin 2.75s linear 1;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+
+  border-radius: 15px;
+  width: 50%;
+
+  font-family: sans-serif;
+  background-color: white;
+  text-align: justify;
+  opacity: 0.7;
+}
+    #overview h3{
+      font-family: Dancing Script;
+      font-size: 38px;
+      text-align: center;
+      margin:0;
+      padding-top: 10px;
+    }
+
+    #overview p{
+      width: 80%;
+      margin-top: 0;
+      padding-top: 10p
+    }
+
+/* animation for the top banner */
+      @keyframes zoomin {
+        0%{
+          transform: scale(0.5);
+          visibility:visible;
+        }
+        100%{
+          transform: scale(1);
+          visibility:visible;
+        }
+
+      }
+
+    /* For article styles, see articles.css */
+
+#mainVideodiv{
+    width: 80%;
+    margin: 6px;
+}
+
+.mainVideo{
+  border: 4px solid #CDE990;
+  margin: 0%;
+}
+
+/* Slideshow container */
+.slideshow{
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+    /* Don't ask what it's for. It changes how the box model interacts with the code. Just leave it. */
+    .slideshow *{
+      box-sizing:border-box
+    }
+
+    /* Hide the videos by default */
+    .mySlides {
+      display: none;
+      margin: auto;
+      animation: slideswap 1.5s linear 1;
+      animation-fill-mode: forwards;
+    }
+    @keyframes slideswap {
+      from {opacity: .1}
+      to {opacity: 1}
+    }
+
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -8%;
+      color: #3A4F7A;
+      font-weight: bold;
+      font-size: 48px;
+      transition: 0.6s ease;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      color: white;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      background-color:#3A4F7A;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .activeDot, .dot:hover{
+      background-color: white;
+    }
+
+.externalResource{
+  list-style-type: none;
+}
+    .externalResource:before{
+      content: "›";
+      margin-right: 0.5em;
+    }
+
+.petitionrequestdiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#petition{
+  margin: auto; /* Center div*/
+  margin-bottom: 2%; /*Top space*/
+  margin-top: 2%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* animation: zoomin 2.75s linear 1; */
+  /* visibility: hidden; */
+  /* animation-fill-mode: forwards; */
+
+  border-radius: 15px;
+  width: 45%;
+
+  font-family: sans-serif;
+  background-color: white;
+  text-align: justify;
+  opacity: 0.7;
+}
+    #petition h3{
+      font-family: Dancing Script;
+      font-size: 38px;
+      text-align: center;
+      margin:0;
+      padding-top: 10px;
+    }
+
+    #petition p{
+      width: 80%;
+      margin-top: 0;
+      padding-top: 10p
+    }
+
+    #petition ul{
+      width: 73%;
+      margin-top: 0;
+      padding-top: 10p
+    }
+
+    #petition .inline-flex input:focus{
+      background-color: #CDE990;
+      transition: 0.66s;
+    }
+
+    #submit{
+      margin-bottom: 12px;
+      margin-top: 10px;
+      border-radius: 15px;
+      background-color: white;
+      font-size: 24px;
+      padding: 12px;
+      font-family: Dancing Script;
+    }
+    #submit:hover{
+      background-color: #05385c;
+      color: white;
+    }
+    #Error{
+      color: red;
+
+    }
+
+#resources{
+    margin: auto; /* Center div*/
+    margin-bottom: 2%; /*Top space*/
+    margin-top: 2%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+    border-radius: 15px;
+    width: 45%;
+  
+    font-family: sans-serif;
+    background-color: white;
+    text-align: justify;
+    opacity: 0.7;
+  }
+
+  #resources h3{
+    font-family: Dancing Script;
+    font-size: 38px;
+    text-align: center;
+    margin:0;
+    padding-top: 10px;
+  }
+
+  #resources p{
+    width: 80%;
+    margin-top: 0;
+    padding-top: 10p
+  }
+
+    #resourcesLinks a:hover{
+      color: #edb3b2;
+    }
+
+#prayerRequests {
+        margin: auto;
+        margin-bottom: 2%; /*Top space*/
+        margin-top: 2%;
+        padding-left: 2%;
+      
+        align-items: right;
+      
+        font-family: sans-serif;
+        text-align: right;
+      }
+          #prayerRequests h3{
+            font-family: Dancing Script;
+            font-size: 38px;
+            text-align: left;
+            margin:0;
+            padding-top: 10px;
+          }
+          
+          #prayerRequests p{
+            width: 100%;
+            margin-top: 0;
+            padding-top: 10p;
+            text-align: left;
+          }
+      
+          #prayerRequests textarea{ 
+            width: 73%;
+            margin-top: 0;
+            padding-top: 10px;
+            resize: none;
+            border: 2px solid #05385c;
+            border-radius: 15px;
+          }
+
+          #prayerRequests input{
+            border: 2px solid #05385c;
+            border-radius: 5px;
+          }
+
+          #prayerRequests .inline-flex textarea:focus, #prayerRequests .inline-flex input:focus{
+            background-color: #edb3b2;
+            transition: 0.66s;
+          }
+      
+          #submitprayer{
+            margin-bottom: 12px;
+            margin-top: 10px;
+            margin-right: 40%;
+            border-radius: 15px;
+            background-color: white;
+            font-size: 24px;
+            padding: 12px;
+            font-family: Dancing Script;
+          }
+
+          #submitprayer:hover{
+            background-color: #05385c;
+            color: white;
+          }
+
+          #requestprayer{
+            display: none;
+          }
+
+         
+.prayerfooterdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+  }
+
+.prayerfooterdiv img{
+  margin: 10px;
+  padding-top: 0;
+  padding-right: 0px;
+  height: 300px;
+  opacity: 1;
+  gap: 0;
+} 
+/* use the above for the share button pictures */
+footer {
+   bottom: 0px;
+   height: auto;
+   width: 100%;
+   color: #020066;
+   background: linear-gradient(#edb3b2, #ffbb99, #CDE990);
+   opacity: 0.9;
+   gap: 0px;
+}
+footer *{
+  margin:0;
+  border:0;
+  padding: 2px;
+}
+#footerdiv{
+  font-size: 25px;
+}
+
+
+
+
+
+.buttonstyle {
+    width: 54px;
+    height: 40px;
+    font-size: 16px;
+    font-family: Dancing Script;
+    border-radius: 5px;
+}
+button:hover{
+  background-color: #3A4F7A;
+  color: white;
+  border-color: #3A4F7A;
+  transition: 0.4s;
+}
+
+.inline-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 4px;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(400px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+/* Customized Scroll Bar */
+::-webkit-scrollbar{
+      width: 15px;
+}
+::-webkit-scrollbar-track{
+  background: #edb3b2;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#CDE990, #ffbb99);
+    border-radius: 15px
+  }
+
+
+/* Floating Share Button */
+.sharebutton{
+  position: fixed;
+  bottom: 50px;
+  top: 50;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(#CDE990, #ffbb99);
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+  z-index: 300;
+  /* specifies the stack order of an element. An element with greater stack order is always 
+  in front of an element with a lower stack order. */
+}
+    .sharebutton span{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      cursor: pointer;
+      color: #3A4F7A;
+      font-size: 40px;
+      font-family: Open Sans;
+      transition: 0.3s ease-in-out;
+      opacity: 1;
+    }
+    .sharebutton ul{
+      position: absolute;
+      bottom: 50px;
+      background: white;
+      opacity: 1;
+      font-family: Open Sans;
+      font-size: 15px;
+      min-width: 200px;
+      padding: 10px;
+      border-radius: 20px;
+      visibility: hidden;
+      transition: 0.3s;
+    }
+    .sharebutton.active ul{
+      bottom: 60px;
+      opacity: 1;
+      visibility: visible;
+      transition: 0.3s;
+    }
+    .sharebutton ul li{
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px 0;
+      transition: 0s;
+      opacity: 1;
+    }
+    .sharebutton ul li:hover{
+      font-weight: 600;
+    }
+    .sharebutton ul li:not(:last-child){
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .sharebutton ul li img{
+      
+      margin: 5px;
+      padding: 5px;
+      height: 25px;
+      opacity: 0.2;
+      transform: scale(0.4);
+
+    }
+    .sharebutton ul li:hover img, .sharebutton ul li:hover input{
+      opacity: 0.8;
+    }
+    .sharebutton ul li input{
+      margin: 5px;
+      margin-left: 18px;
+      margin-right: 15px;
+      padding: 10px;
+      height: 15px;
+      opacity: 1;
+    }
